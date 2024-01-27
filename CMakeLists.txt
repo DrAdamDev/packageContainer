@@ -20,7 +20,7 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 # Add test source files
-file(GLOB TEST_SOURCES "tests/*.cpp")
+file(GLOB TEST_SOURCES "test/*.cpp")
 
 # Define the test executable
 add_executable(unitTests ${TEST_SOURCES})
