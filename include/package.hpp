@@ -12,8 +12,12 @@ private:
 	const long long int size;
 
 public:
-	Package(std::string ID, long long int size) : ID(ID), size(size) {
+	Package(const std::string& ID, long long int size) : ID(ID), size(size) {
 
 		++globalAdditions;		
 	}
+
+	const std::string& getID() const {return ID;}
+
+	long long int getSize() const {return size;}
 };
